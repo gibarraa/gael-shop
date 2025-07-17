@@ -8,25 +8,23 @@
 import SwiftUI
 
 struct CategoriesView: View {
-    
     let categories: [(name: String, iconName: String)] = [
-        ("Fruits", "fruits"),
-        ("Bread", "bread"),
-        ("Vegetable", "vegetables"),
-        ("Fish", "fish"),
-        ("Meat", "meat"),
-        ("Drinks", "drinks"),
+        ("Frutas", "fruits"),
+        ("Panes", "bread"),
+        ("Vegetales", "vegetables"),
+        ("Pescadería", "fish"),
+        ("Carne", "meat"),
+        ("Bebidas", "drinks"),
         ("Sea Food", "seafood"),
-        ("Ice Cream", "icecream"),
-        ("Juice", "juice"),
-        ("Ham", "ham")
+        ("Helado", "icecream"),
+        ("Jugos", "juice"),
+        ("Jamón", "ham")
     ]
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            
             HStack {
-                Text("Categories")
+                Text("Categorías")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(.black)
@@ -39,9 +37,7 @@ struct CategoriesView: View {
                     HStack(spacing: 5) {
                         Image(systemName: "slider.horizontal.3")
                             .foregroundColor(.green)
-                        Text("Filter")
-                            .foregroundColor(.green)
-                            .font(.headline)
+                       
                     }
                     .padding(.vertical, 8)
                     .padding(.horizontal, 15)
@@ -66,7 +62,7 @@ struct CategoriesView: View {
                 }
                 .buttonStyle(PlainButtonStyle())
 
-              Button(action: {
+                Button(action: {
                     print("no sirve, scrollea")
                 }) {
                     Image(systemName: "chevron.right")
@@ -84,20 +80,17 @@ struct CategoriesView: View {
                 HStack(spacing: 15) {
                     ForEach(categories, id: \.name) { category in
                         CategoryItemView(name: category.name, iconName: category.iconName)
-                            
                     }
                 }
-                
             }
             .padding(.horizontal)
             
-            Spacer()
+            
         }
         .padding(.vertical)
         .background(Color.white)
     }
 }
-
 
 struct CategoryItemView: View {
     let name: String
@@ -105,7 +98,6 @@ struct CategoryItemView: View {
 
     var body: some View {
         VStack(spacing: 8) {
-            
             Image(iconName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -119,7 +111,7 @@ struct CategoryItemView: View {
                 .foregroundColor(.black.opacity(0.8))
         }
         .padding(10)
-        .frame(width: 100) 
+        .frame(width: 100)
         .background(Color.white)
         .cornerRadius(15)
         .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)

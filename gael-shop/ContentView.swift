@@ -17,9 +17,9 @@ struct ContentView: View {
             VStack(spacing: 0) {
                 NavbarView()
                 CategoriesView()
-                Spacer()
+                ProductView()
             }
-            .frame(width: screen.width, height: screen.height)
+            .frame(width: screen.width - (screen.width / 5), height: screen.height)
         }
     }
 }

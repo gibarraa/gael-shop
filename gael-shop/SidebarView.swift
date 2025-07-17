@@ -27,12 +27,12 @@ struct SidebarView: View {
                 .padding(.vertical, 2)
 
             SidebarButton(icon: "square.grid.2x2.fill", title: "Dashboard", selected: $selected)
-            SidebarButton(icon: "circle.grid.3x3.fill", title: "Categories", selected: $selected)
-            SidebarButton(icon: "heart.fill", title: "Favourite", selected: $selected)
-            SidebarButton(icon: "cart.fill", title: "Orders", selected: $selected)
-            SidebarButton(icon: "message.fill", title: "Messages", selected: $selected)
+            SidebarButton(icon: "circle.grid.3x3.fill", title: "Categorias", selected: $selected)
+            SidebarButton(icon: "heart.fill", title: "Favoritos", selected: $selected)
+            SidebarButton(icon: "cart.fill", title: "Ordenes", selected: $selected)
+            SidebarButton(icon: "message.fill", title: "Mensajes", selected: $selected)
             SidebarButton(icon: "cube.fill", title: "Top Deals", selected: $selected)
-            SidebarButton(icon: "gearshape.fill", title: "Settings", selected: $selected)
+            SidebarButton(icon: "gearshape.fill", title: "Configuración", selected: $selected)
             
             Spacer()
         }
