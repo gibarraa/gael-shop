@@ -96,7 +96,7 @@ struct DiscountBannerView: View {
                 .clipped()
                 .opacity(0.2)
         )
-        .background(Color.green.opacity(0.7)) 
+        .background(Color.green.opacity(0.8))
         .cornerRadius(15)
         .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 3)
     }
