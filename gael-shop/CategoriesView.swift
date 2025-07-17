@@ -20,7 +20,13 @@ struct CategoriesView: View {
         ("Sea Food", "seafood"),
         ("Helado", "icecream"),
         ("Jugos", "juice"),
-        ("Jamón", "ham")
+        ("Jamón", "ham"),
+        ("Lácteos", "dairy"),
+        ("Snacks", "snacks"),
+        ("Cereales", "cereal"),
+        ("Postres", "desserts"),
+        ("Congelados", "frozen"),
+        ("Especias", "spices")
     ]
 
     //body de la estructura categories
