@@ -8,15 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    var screen = NSScreen.main!.visibleFrame
     var body: some View {
-        HStack {
+        HStack(spacing: 0) {
             SidebarView()
+                .frame(width: screen.width / 6, height: screen.height)
             
+            VStack(spacing: 0) {
+                NavbarView()
+                    
+                    
+                Spacer()
+            }
+            .frame(width: screen.width, height: screen.height)
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

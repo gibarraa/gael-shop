@@ -13,7 +13,6 @@ struct SidebarView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
         
-            Spacer()
             VStack {
                 Text("Gael ")
                     .font(.custom("HelveticaNeue-Bold", size: 24))
