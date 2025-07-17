@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		B169C2C82E28B40400DCE966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B169C2AE2E28B40100DCE966 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B169C2B52E28B40100DCE966;
+			remoteInfo = "gael-shop";
+		};
+		B169C2D22E28B40400DCE966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B169C2AE2E28B40100DCE966 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B169C2B52E28B40100DCE966;
+			remoteInfo = "gael-shop";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B169C2B62E28B40100DCE966 /* gael-shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gael-shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B169C2C72E28B40400DCE966 /* gael-shopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gael-shopTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B169C2D12E28B40400DCE966 /* gael-shopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gael-shopUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B169C2B82E28B40100DCE966 /* gael-shop */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "gael-shop";
+			sourceTree = "<group>";
+		};
+		B169C2CA2E28B40400DCE966 /* gael-shopTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "gael-shopTests";
+			sourceTree = "<group>";
+		};
+		B169C2D42E28B40400DCE966 /* gael-shopUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "gael-shopUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B169C2B32E28B40100DCE966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B169C2C42E28B40400DCE966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B169C2CE2E28B40400DCE966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B169C2AD2E28B40100DCE966 = {
+			isa = PBXGroup;
+			children = (
+				B169C2B82E28B40100DCE966 /* gael-shop */,
+				B169C2CA2E28B40400DCE966 /* gael-shopTests */,
+				B169C2D42E28B40400DCE966 /* gael-shopUITests */,
+				B169C2B72E28B40100DCE966 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B169C2B72E28B40100DCE966 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B169C2B62E28B40100DCE966 /* gael-shop.app */,
+				B169C2C72E28B40400DCE966 /* gael-shopTests.xctest */,
+				B169C2D12E28B40400DCE966 /* gael-shopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B169C2B52E28B40100DCE966 /* gael-shop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B169C2DB2E28B40400DCE966 /* Build configuration list for PBXNativeTarget "gael-shop" */;
+			buildPhases = (
+				B169C2B22E28B40100DCE966 /* Sources */,
+				B169C2B32E28B40100DCE966 /* Frameworks */,
+				B169C2B42E28B40100DCE966 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B169C2B82E28B40100DCE966 /* gael-shop */,
+			);
+			name = "gael-shop";
+			packageProductDependencies = (
+			);
+			productName = "gael-shop";
+			productReference = B169C2B62E28B40100DCE966 /* gael-shop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B169C2C62E28B40400DCE966 /* gael-shopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B169C2DE2E28B40400DCE966 /* Build configuration list for PBXNativeTarget "gael-shopTests" */;
+			buildPhases = (
+				B169C2C32E28B40400DCE966 /* Sources */,
+				B169C2C42E28B40400DCE966 /* Frameworks */,
+				B169C2C52E28B40400DCE966 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B169C2C92E28B40400DCE966 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B169C2CA2E28B40400DCE966 /* gael-shopTests */,
+			);
+			name = "gael-shopTests";
+			packageProductDependencies = (
+			);
+			productName = "gael-shopTests";
+			productReference = B169C2C72E28B40400DCE966 /* gael-shopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B169C2D02E28B40400DCE966 /* gael-shopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B169C2E12E28B40400DCE966 /* Build configuration list for PBXNativeTarget "gael-shopUITests" */;
+			buildPhases = (
+				B169C2CD2E28B40400DCE966 /* Sources */,
+				B169C2CE2E28B40400DCE966 /* Frameworks */,
+				B169C2CF2E28B40400DCE966 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B169C2D32E28B40400DCE966 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B169C2D42E28B40400DCE966 /* gael-shopUITests */,
+			);
+			name = "gael-shopUITests";
+			packageProductDependencies = (
+			);
+			productName = "gael-shopUITests";
+			productReference = B169C2D12E28B40400DCE966 /* gael-shopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B169C2AE2E28B40100DCE966 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					B169C2B52E28B40100DCE966 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					B169C2C62E28B40400DCE966 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = B169C2B52E28B40100DCE966;
+					};
+					B169C2D02E28B40400DCE966 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = B169C2B52E28B40100DCE966;
+					};
+				};
+			};
+			buildConfigurationList = B169C2B12E28B40100DCE966 /* Build configuration list for PBXProject "gael-shop" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B169C2AD2E28B40100DCE966;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B169C2B72E28B40100DCE966 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B169C2B52E28B40100DCE966 /* gael-shop */,
+				B169C2C62E28B40400DCE966 /* gael-shopTests */,
+				B169C2D02E28B40400DCE966 /* gael-shopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B169C2B42E28B40100DCE966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B169C2C52E28B40400DCE966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B169C2CF2E28B40400DCE966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B169C2B22E28B40100DCE966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B169C2C32E28B40400DCE966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B169C2CD2E28B40400DCE966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B169C2C92E28B40400DCE966 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B169C2B52E28B40100DCE966 /* gael-shop */;
+			targetProxy = B169C2C82E28B40400DCE966 /* PBXContainerItemProxy */;
+		};
+		B169C2D32E28B40400DCE966 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B169C2B52E28B40100DCE966 /* gael-shop */;
+			targetProxy = B169C2D22E28B40400DCE966 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B169C2D92E28B40400DCE966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B169C2DA2E28B40400DCE966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B169C2DC2E28B40400DCE966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "gael-shop/gael_shop.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"gael-shop/Preview Content\"";
+				DEVELOPMENT_TEAM = RBNV9N7PDC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gael.gael-shop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B169C2DD2E28B40400DCE966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "gael-shop/gael_shop.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"gael-shop/Preview Content\"";
+				DEVELOPMENT_TEAM = RBNV9N7PDC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gael.gael-shop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B169C2DF2E28B40400DCE966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RBNV9N7PDC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gael.gael-shopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gael-shop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/gael-shop";
+			};
+			name = Debug;
+		};
+		B169C2E02E28B40400DCE966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RBNV9N7PDC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gael.gael-shopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gael-shop.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/gael-shop";
+			};
+			name = Release;
+		};
+		B169C2E22E28B40400DCE966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RBNV9N7PDC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gael.gael-shopUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "gael-shop";
+			};
+			name = Debug;
+		};
+		B169C2E32E28B40400DCE966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RBNV9N7PDC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gael.gael-shopUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "gael-shop";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B169C2B12E28B40100DCE966 /* Build configuration list for PBXProject "gael-shop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B169C2D92E28B40400DCE966 /* Debug */,
+				B169C2DA2E28B40400DCE966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B169C2DB2E28B40400DCE966 /* Build configuration list for PBXNativeTarget "gael-shop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B169C2DC2E28B40400DCE966 /* Debug */,
+				B169C2DD2E28B40400DCE966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B169C2DE2E28B40400DCE966 /* Build configuration list for PBXNativeTarget "gael-shopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B169C2DF2E28B40400DCE966 /* Debug */,
+				B169C2E02E28B40400DCE966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B169C2E12E28B40400DCE966 /* Build configuration list for PBXNativeTarget "gael-shopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B169C2E22E28B40400DCE966 /* Debug */,
+				B169C2E32E28B40400DCE966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B169C2AE2E28B40100DCE966 /* Project object */;
+}
