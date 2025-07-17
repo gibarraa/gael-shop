@@ -29,9 +29,22 @@
 		B169C2D12E28B40400DCE966 /* gael-shopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gael-shopUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B169C2E82E28BD5600DCE966 /* Exceptions for "gael-shop" folder in "gael-shop" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Untitled.swift,
+			);
+			target = B169C2B52E28B40100DCE966 /* gael-shop */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B169C2B82E28B40100DCE966 /* gael-shop */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B169C2E82E28BD5600DCE966 /* Exceptions for "gael-shop" folder in "gael-shop" target */,
+			);
 			path = "gael-shop";
 			sourceTree = "<group>";
 		};
