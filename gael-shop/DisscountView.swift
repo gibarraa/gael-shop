@@ -55,6 +55,13 @@ struct DiscountView: View {
                     ForEach(discountBanners) { banner in
                         DiscountBannerView(banner: banner)//foreach para iterar todos los descuentos en el array
                             .frame(width: 180)
+                        //bloque de las tranciciones al scrollear
+                            .scrollTransition(.interactive, axis: .horizontal) { view, phase in
+                                view
+                                    .opacity(phase.isIdentity ? 1.0 : 0.3) // Opacidad completa cuando está visible, 70% cuando no
+                                    .scaleEffect(phase.isIdentity ? 1.0 : 0.8) // Tamaño normal cuando está visible, 80% cuando no
+                                    .offset(y: phase.isIdentity ? 0 : 50) // Sin desplazamiento vertical cuando está visible, se baja 50 puntos cuando no
+                            }
                     }
                 }
                 .padding(.horizontal)// padding de el carrusel de descuentos

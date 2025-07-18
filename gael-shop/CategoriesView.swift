@@ -28,7 +28,7 @@ struct CategoriesView: View {
         ("Congelados", "frozen"),
         ("Especias", "spices")
     ]
-
+    
     //body de la estructura categories
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {//vstack con padding de 20 que contiene todo el contenido
@@ -46,7 +46,7 @@ struct CategoriesView: View {
                     HStack(spacing: 5) {//hstack para la imagen de botón
                         Image(systemName: "slider.horizontal.3")
                             .foregroundColor(.green)
-                       
+                        
                     }
                     .padding(.vertical, 8)//padding vertical de 8
                     .padding(.horizontal, 8)//padding horizontal de 8 oara hacerlo cuadrado
@@ -58,7 +58,7 @@ struct CategoriesView: View {
                     )
                 }
                 .buttonStyle(PlainButtonStyle())//boton con estilo plano
-
+                
                 Button(action: {//botón para scroll sin funcionamiento
                     print("no sirve, scrollea")
                 }) {
@@ -70,7 +70,7 @@ struct CategoriesView: View {
                         .clipShape(Circle())
                 }
                 .buttonStyle(PlainButtonStyle())
-
+                
                 Button(action: {
                     print("no sirve, scrollea")//botón para el scroll sin funcionamiento
                 }) {
@@ -84,55 +84,65 @@ struct CategoriesView: View {
                 .buttonStyle(PlainButtonStyle())
             }
             .padding(.horizontal)
-
+            
             ScrollView(.horizontal, showsIndicators: false) {//carrusel para las categorías
                 HStack(spacing: 15) {//Espaciado de 15 entre cada categoría
                     ForEach(categories, id: \.name) { category in
                         CategoryItemView(name: category.name, iconName: category.iconName)//foreach que pone cada categoría dependiendo de lo que haya en el arreglo que hicimos al inicio
+                        
+                        //bloque de las tranciciones al scrollear
+                            .scrollTransition(.interactive, axis: .horizontal) { view, phase in
+                                view
+                                    .opacity(phase.isIdentity ? 1.0 : 0.3) // Opacidad completa cuando está visible, 70% cuando no
+                                    .scaleEffect(phase.isIdentity ? 1.0 : 0.8) // Tamaño normal cuando está visible, 80% cuando no
+                                    .offset(y: phase.isIdentity ? 0 : 50) // Sin desplazamiento vertical cuando está visible, se baja 50 puntos cuando no
+                            }
+                                
+                            }
                     }
                 }
+                .padding(.horizontal)// padding horizontal para evitar que estén juntos
+                
+                
             }
-            .padding(.horizontal)// padding horizontal para evitar que estén juntos
-            
-            
+            .padding(.vertical)
+            .background(Color.white)
         }
-        .padding(.vertical)
-        .background(Color.white)
     }
-}
-
-struct CategoryItemView: View {//estructura para cada item del carrusel
-    let name: String
-    let iconName: String
-
-    var body: some View {
-        VStack(spacing: 8) {//vstack con espaciado de 8 para separar nombre e imagen
-            Image(iconName)//imagen de la categoría
-                .resizable()
-                .aspectRatio(contentMode: .fit)//se ajusta para que quede al tamaño
-                .frame(width: 60, height: 60)//relacion aspecto 1:1
-                .background(Color.white)//color blanco en el fondo
-                .cornerRadius(15)//borde de la imagen redondeado
-                .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)//sombra para darle produndidad
-
-            Text(name)//nombre de la categoría con formato
-                .font(.caption)
-                .foregroundColor(.black.opacity(0.8))
+    
+    struct CategoryItemView: View {//estructura para cada item del carrusel
+        let name: String
+        let iconName: String
+        
+        var body: some View {
+            VStack(spacing: 8) {//vstack con espaciado de 8 para separar nombre e imagen
+                Image(iconName)//imagen de la categoría
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)//se ajusta para que quede al tamaño
+                    .frame(width: 60, height: 60)//relacion aspecto 1:1
+                    .background(Color.white)//color blanco en el fondo
+                    .cornerRadius(15)//borde de la imagen redondeado
+                    .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)//sombra para darle produndidad
+                
+                Text(name)//nombre de la categoría con formato
+                    .font(.caption)
+                    .foregroundColor(.black.opacity(0.8))
+            }
+            .padding(10)//padding gral de 10
+            .frame(width: 100)//ancho de cada categoría de 100
+            .background(Color.white)//fondo blanco en cada categoría
+            .cornerRadius(15)//bordes de categorías redondeados
+            .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)//sombra para meterle profundidad
         }
-        .padding(10)//padding gral de 10
-        .frame(width: 100)//ancho de cada categoría de 100
-        .background(Color.white)//fondo blanco en cada categoría
-        .cornerRadius(15)//bordes de categorías redondeados
-        .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)//sombra para meterle profundidad
     }
-}
-
-
-//preview usado para desarrollo, ignorar
-struct CategoriesView_Previews: PreviewProvider {
-    static var previews: some View {
-        CategoriesView()
-            .previewLayout(.sizeThatFits)
-            .padding()
+    
+    
+    //preview usado para desarrollo, ignorar
+    struct CategoriesView_Previews: PreviewProvider {
+        static var previews: some View {
+            CategoriesView()
+                .previewLayout(.sizeThatFits)
+                .padding()
+        }
     }
-}
+

@@ -49,6 +49,18 @@ struct ProductView: View {
                 HStack(spacing: 20) {//hstack con espaciado 20 para tener espacio entre productos
                     ForEach(products, id: \.name) { product in
                         ProductCardView(product: product)//foreach que itera y pone los productos del array
+                            .scrollTransition(.interactive, axis: .horizontal) { view, phase in
+                                               view
+                                                   // Rotación 3D alrededor del eje Y
+                            .rotation3DEffect(
+                            .degrees(phase.value * -30), // Gira de 0 a -90 grados
+                                axis: (x: 0.0, y: 1.0, z: 0.0), // Alrededor del eje Y (vertical)
+                                anchor: phase.value < 0 ? .trailing : .leading // Gira desde el borde cercano
+                            )
+                            // Desvanecimiento basado en la fase de scroll
+                            .opacity(1.0 - abs(phase.value * 0.7)) // Opacidad: 1.0 (visible) a 0.3 (casi invisible)
+                            .scaleEffect(1.0 - abs(phase.value * 0.1)) // Ligera reducción de escala
+                                           }
                     }
                 }
             }
