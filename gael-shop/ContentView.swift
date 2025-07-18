@@ -15,7 +15,7 @@ struct ContentView: View {
     var screen = NSScreen.main?.visibleFrame ?? .zero
 
     var body: some View {
-        //Hstack principal donde va a estar todo el contenido, contiene el sidebar y el vstack del contenido principal, lleva un espaciado de 0 para que todo esté junto
+        //Hstack principal donde va a estar todo el contenido, contiene el sidebar y el vstack del contenido principal, lleva un espaciado de 0 para que todo esté junto|
         HStack(spacing: 0) {
             SidebarView()//lamada de la estructura del sidebar
                 .frame(width: screen.width / 6, height: screen.height)//uso de var screen para dar un ancho de una sexta parte al sidebar

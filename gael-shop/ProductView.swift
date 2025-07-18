@@ -9,13 +9,18 @@ import SwiftUI
 
 struct ProductView: View {
    
-    //arreglo donde guardo la información genérica de los productos, en un proximo commit agregaré más
+    //arreglo donde guardo la información genérica de los productos, agregué más
     let products: [(name: String, description: String, price: Double, imageName: String)] = [
         ("Fresas", "Fresas frescas de la más alta calidad,", 20.10, "strawberry"),
         ("Lechuga", "Lechuga de granja natural", 15.10, "cabbage"),
         ("Brocolo", "brocoli de la más alta calidad para tu mesa", 25.10, "brocoly"),
         ("Naranja", "ricas naranjas francesas", 12.10, "orange"),
-        ("Manzana Fresca", "Manzana de la cosecha del día", 18.10, "fresh_apple")
+        ("Manzana Fresca", "Manzana de la cosecha del día", 18.10, "fresh_apple"),
+        ("Plátano", "Plátano maduro orgánico", 10.50, "bananas"),
+        ("Tomate", "Tomate rojo y jugoso", 8.90, "tomato"),
+        ("Pimiento Verde", "Pimiento fresco para tus ensaladas", 14.00, "green_pepper"),
+        ("Zanahoria", "Zanahoria crujiente y dulce", 7.20, "carrot"),
+        ("Aguacate", "Aguacate hass maduro", 35.00, "avocado")
     ]
 
     var body: some View {
