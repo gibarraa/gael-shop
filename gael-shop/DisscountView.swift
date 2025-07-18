@@ -19,9 +19,14 @@ struct DiscountView: View {
     //se crea un array para guardar los datos de cada banner que haremos, pueden agregarse más
     let discountBanners: [DiscountBanner] = [
         .init(percentage: 35, description: "Descuento elegible para productos de linea blanca, solo hasta el Jueves", imageName: "discount_bg_1"),
-        .init(percentage: 20, description: "Ordena más de 2 kilos de carnes rojas y llevate este descuento", imageName: "discount_bg_2"),
-        .init(percentage: 20, description: "Descuentos en todos los electrodomesticos durante este fin de semana", imageName: "discount_bg_3"),
-        .init(percentage: 10, description: "Consigue este descuento siguiendonos en nuestra página de instagram", imageName: "discount_bg_4")
+        .init(percentage: 20, description: "Ordena más de 2 kilos de carnes rojas y llévate este descuento", imageName: "discount_bg_4"),
+        .init(percentage: 20, description: "Descuentos en todos los electrodomésticos durante este fin de semana", imageName: "discount_bg_3"),
+        .init(percentage: 10, description: "Consigue este descuento siguiéndonos en nuestra página de instagram", imageName: "discount_bg_2"),
+        .init(percentage: 15, description: "Aprovecha 15% de descuento en frutas y verduras frescas toda la semana", imageName: "discount_bg_1"),
+        .init(percentage: 50, description: "¡Mitad de precio en tu segunda compra de lácteos!", imageName: "discount_bg_3"),
+        .init(percentage: 25, description: "25% menos en panadería artesanal comprando más de $100", imageName: "discount_bg_4"),
+        .init(percentage: 10, description: "Envío gratis en tu primer pedido con nuestra app móvil", imageName: "discount_bg_1"),
+        .init(percentage: 30, description: "Descuento especial del 30% en nuestra selección de vinos finos", imageName: "discount_bg_2")
     ]
 
     var body: some View {//body de la estructura
